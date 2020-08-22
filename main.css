@@ -28,8 +28,9 @@
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  width: 80%;
+  width: 100%;
   margin: auto;
+  background-color: #1F2229;
 }
 
 .header__link {
