@@ -169,9 +169,24 @@
 }
 
 .unlimited__buttons {
-  list-style: none;
-  padding: 20px 0 0;
-  margin: 0;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 32px);
+  grid-gap: 10px;
+  margin: 20px 0 32px;
+  /* filter: grayscale(100%);
+  opacity: 0.5; */
+}
+
+.unlimited__button {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.unlimited__button_active {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 /**/
@@ -227,6 +242,20 @@ input:checked+.unlimited__slider:before {
   -webkit-transform: translateX(14px);
   -ms-transform: translateX(14px);
   transform: translateX(14px);
+}
+
+.unlimited__switch-block {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px;
+}
+
+
+.unlimited__switch-title {
+  max-width: 200px;
+  margin: 0 0 0 12px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /*КОНЕЦ ЧЕКБОКСЫ*/
