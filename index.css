@@ -13,12 +13,18 @@
 }
 
 .header {
+  width: 100%;
+  background-color: #1F2229;
+}
+
+.header__wrap {
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  width: 80%;
   margin: auto;
+  background-color: #1F2229;
 }
 
 .header__link {
@@ -248,6 +254,22 @@
   align-items: center;
 }
 
+.popup__infinite-btn {
+  filter: grayscale(100%);
+  opacity: .5;
+}
+
+.popup__inf-colored {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.popup__infinite-btn:hover {
+  cursor: pointer;
+  filter: grayscale(50%);
+  opacity: .8;
+}
+
 .popup__price {
   margin: 27px 0 28px 0;
   border: 4px solid #FF59A3;
@@ -260,15 +282,14 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  position: relative;
 }
 
 .popup__currency {
   width: 14px;
   height: 31px;
   position: absolute;
-  top: 70px;
-  right: 60px;
+  top: -10px;
+  right: -17px;
 }
 
 .popup__your-plan-title-container {
@@ -291,6 +312,7 @@
   font-size: 54px;
   font-style: normal;
   font-weight: normal;
+  position: relative;
 }
 
 .popup__buy-button {
@@ -304,6 +326,12 @@
   text-align: center;
   background-color: #1F2229;
   border: none;
+  outline: none;
+}
+
+.popup__buy-button:hover {
+  opacity: .6;
+  cursor: pointer;
 }
 
 .popup__additional-info {
@@ -346,6 +374,24 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 32px);
   grid-gap: 6px;
+}
+
+.popup__social {
+  filter: grayscale(100%);
+  opacity: .5;
+  width: 32px;
+  height: 32px;
+}
+
+.popup__social:hover {
+  cursor: pointer;
+  filter: grayscale(50%);
+  opacity: .8;
+}
+
+.popup__social-colored {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 .footer {
