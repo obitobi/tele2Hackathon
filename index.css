@@ -79,10 +79,6 @@
   padding: 0 50px;
 }
 
-.main__title {
-  margin: 30px 50px;
-}
-
 .page {
   /*минимальная ширина страницы*/
   min-width: 320px;
@@ -266,8 +262,8 @@
   width: 257px;
   height: 257px;
   border-radius: 50%;
-  -moz-border-radius:50%;
-  -webkit-border-radius:50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,4 +355,3 @@
   grid-template-columns: repeat(auto-fill, 32px);
   grid-gap: 6px;
 }
-

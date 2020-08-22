@@ -5,7 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tele2</title>
+  <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="main.css" />
+
+
 </head>
 
 <body>
@@ -40,7 +43,80 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="main">
+
+      <div class="column__one">
+        <h1 class="main__title">Подходящие тарифы</h1>
+        <a href="./index.html" class="bot-link"> <img src="./images/arrow-left.svg" alt="стрелочка вправо" class="bot-link__arrow"> Назад к выбору плана</a>
+        <h2 class="main__subtitle">Твой план</h2>
+        <div class="popup__metric">
+          <div class="popup__metric-container popup__metric-container_main">
+            <label for="minInput">Мин:
+              <input type="text" class="popup__input" id="minInput">
+            </label>
+            <div class="popup__widgets">
+              <img src="./images/up-arrow.svg" alt="" class="popup__up-arrow">
+              <img src="./images/down-arrow.svg" alt="" class="popup__down-arrow">
+            </div>
+            <img src="./images/inf-grey.svg" alt="" class="popup__infinite-btn">
+          </div>
+          <div class="popup__metric-container popup__metric-container_main">
+            <label for="gbInput">ГБ:
+              <input type="text" class="popup__input" id="gbInput">
+            </label>
+            <div class="popup__widgets">
+              <img src="./images/up-arrow.svg" alt="" class="popup__up-arrow">
+              <img src="./images/down-arrow.svg" alt="" class="popup__down-arrow">
+            </div>
+            <img src="./images/inf-pink.svg" alt="" class="popup__infinite-btn">
+          </div>
+
+        </div>
+
+        <div class="unlimited">
+          <p class="unlimited__title "><img src="./images/infinity.svg" alt="иконка" class="plan-info__icon">безлимитные услуги</p>
+
+          <ul class="unlimited__list">
+            <li class="unlimited__item unlimited__item_active">Соц. сети</li>
+            <li class="unlimited__item">Мессенджеры</li>
+            <li class="unlimited__item">Музыка</li>
+            <li class="unlimited__item">Видео</li>
+            <li class="unlimited__item">Другое</li>
+          </ul>
+
+          <div class="unlimited__buttons">
+            <img src="./images/ok.svg" alt="Картинка соц сети" class="unlimited__button unlimited__button_active" />
+            <img src="./images/ok.svg" alt="Картинка соц сети" class="unlimited__button" />
+            <img src="./images/ok.svg" alt="Картинка соц сети" class="unlimited__button" />
+            <img src="./images/ok.svg" alt="Картинка соц сети" class="unlimited__button" />
+          </div>
+
+          <div class="unlimited__switch-block">
+            <label class="unlimited__switch">
+              <input type="checkbox">
+              <span class="unlimited__slider"></span>
+            </label>
+            <p class="unlimited__switch-title">«Пакет минут расходуется на городские номера»</p>
+          </div>
+          <div class="unlimited__switch-block">
+            <label class="unlimited__switch">
+              <input type="checkbox" checked>
+              <span class="unlimited__slider"></span>
+            </label>
+            <p class="unlimited__switch-title">Безлимитные SMS</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="popup__main-info">
+        <div class="popup__price">
+          <p class="popup__price-value">58.50 P</p>
+        </div>
+        <button aria-label="Купить" type="button" class="popup__buy-button">Купить</button>
+      </div>
+
+
       <div class="plan-info">
         <ul class="plan-info__list">
           <li class="plan-info__item">
@@ -61,42 +137,6 @@
         </ul>
         <a href="#" class="plan-info__link">Подробные условия тарифа</a>
       </div>
-
-      <div class="unlimited">
-        <p class="unlimited__title "><img src="./images/infinity.svg" alt="иконка" class="plan-info__icon">безлимитные услуги</p>
-
-        <ul class="unlimited__list">
-          <li class="unlimited__item unlimited__item_active">Соц. сети</li>
-          <li class="unlimited__item">Мессенджеры</li>
-          <li class="unlimited__item">Музыка</li>
-          <li class="unlimited__item">Видео</li>
-          <li class="unlimited__item">Другое</li>
-        </ul>
-
-        <div class="unlimited__buttons">
-          <img src="./images/ok.svg" alt="Картинка соц сети" class="unlimited__button unlimited__button_active" />
-          <img src="./images/ok.svg" alt="Картинка соц сети" class="unlimited__button" />
-          <img src="./images/ok.svg" alt="Картинка соц сети" class="unlimited__button" />
-          <img src="./images/ok.svg" alt="Картинка соц сети" class="unlimited__button" />
-        </div>
-
-        <div class="unlimited__switch-block">
-          <label class="unlimited__switch">
-            <input type="checkbox">
-            <span class="unlimited__slider"></span>
-          </label>
-          <p class="unlimited__switch-title">«Пакет минут расходуется на городские номера»</p>
-        </div>
-        <div class="unlimited__switch-block">
-          <label class="unlimited__switch">
-            <input type="checkbox" checked>
-            <span class="unlimited__slider"></span>
-          </label>
-          <p class="unlimited__switch-title">Безлимитные SMS</p>
-        </div>
-
-      </div>
-
 
 
     </main>
