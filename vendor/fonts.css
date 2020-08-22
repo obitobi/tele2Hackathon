@@ -1,21 +1,11 @@
 @font-face {
-  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
-    url('../fonts/Inter-Regular.woff') format('woff');
-  font-family: 'Inter';
-  font-weight: 400;
+  src: url("../fonts/tele2_textsans-regular.woff") format("woff");
+  font-family: "Tele2 TextSans Web SHORT";
+  font-weight: normal;
 }
 
 @font-face {
-  src: url("../fonts/Inter-Medium.woff2") format("woff2"),
-    url("../fonts/Inter-Medium.woff") format("woff");
-  font-family: 'Inter';
-  font-weight: 500;
-
-}
-
-@font-face {
-  src: url('../fonts/Inter-Black.woff2') format('woff2'),
-    url('../fonts/Inter-Black.woff') format('woff');
-  font-family: 'Inter';
-  font-weight: 900;
+  src: url("../fonts/tele2_displayserif-regular.woff") format("woff");
+  font-family: "Tele2 DisplaySerif";
+  font-weight: normal;
 }
