@@ -42,60 +42,93 @@
   </header>
 
   <main class="main">
-  <div class="popup">
-    <seсtion class="popup__container">
-      <div class="popup__chat">
-        <h2 class="popup__title">Настрой свой план</h2>
+    <div class="popup">
+      <seсtion class="popup__container">
+        <div class="popup__chat">
+          <h2 class="popup__title">Настрой свой план</h2>
 
-        <ul class="popup__dialog">
-          <li class="dialog">
-            <div class="dialog__question">
-              <div class="dailog__ava-container">
-                <p class="dialog__name">Tele2</p>
-                <img src="./images/dialog-ava.png" alt="" class="dialog__avatar">
+          <ul class="popup__dialog">
+            <li class="dialog">
+              <div class="dialog__question">
+                <div class="dailog__ava-container">
+                  <p class="dialog__name">Tele2</p>
+                  <img src="./images/dialog-ava.png" alt="" class="dialog__avatar">
+                </div>
+                <div class="dialog__box dialog__box_question">
+                  <p class="dialog__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
+                    sit
+                    amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+                    ipsum
+                    dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. </p>
+                  <img src="./images/tail-pink.svg" alt="" class="dialog__box_question-tail">
+                </div>
               </div>
-              <div class="dialog__box dialog__box_question">
-                <p class="dialog__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. </p>
-                <img src="./images/tail-pink.svg" alt="" class="dialog__box_question-tail">
+              <div class="dialog__box dialog__box_answer">
+                <p class="dialog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="./images/tail-pink-opacity.svg" alt="" class="dialog__box_answer-tail">
               </div>
-            </div>
-            <div class="dialog__box dialog__box_answer">
-              <p class="dialog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <img src="./images/tail-pink-opacity.svg" alt="" class="dialog__box_answer-tail">
-            </div>
-          </li>
-        </ul>
-        <div class="popup__chat-buttons">
-          <button aria-label="Дать ответ" type="button" class="popup__answer-button">Много</button>
-          <button aria-label="Дать ответ" type="button" class="popup__answer-button">Средне</button>
-          <button aria-label="Дать ответ" type="button" class="popup__answer-button">Мало</button>
-          <button aria-label="Закрыть чат" type="button" class="popup__answer-button popup__close-button">Давай
-            закончим
-          </button>
-        </div>
-      </div>
-      <div class="popup__your-plan">
-        <div class="popup__main-info">
-          <div class="popup__your-plan-title-container">
-            <h2 class="popup__your-plan-title">ТВОЙ ПЛАН</h2>
-            <p class="popup__your-plan-subtitle">Безлимит на Tele2 Россия</p>
-          </div>
-          <div class="popup__price">
-            <p class="popup_price-value">58.50 P</p>
+            </li>
+          </ul>
+          <div class="popup__chat-buttons">
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Много</button>
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Средне</button>
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Мало</button>
+            <button aria-label="Закрыть чат" type="button" class="popup__answer-button popup__close-button">Давай
+              закончим
+            </button>
           </div>
         </div>
-        <div class="popup__additional-info">
-          <div class="popup__gb"></div>
-          <div class="popup__min"></div>
-          <div class="popup__social"></div>
+        <div class="popup__your-plan">
+          <div class="popup__main-info">
+            <div class="popup__your-plan-title-container">
+              <h2 class="popup__your-plan-title">ТВОЙ ПЛАН</h2>
+              <p class="popup__your-plan-subtitle"><span style="font-weight: bold">Безлимит</span> на Tele2 Россия</p>
+            </div>
+            <div class="popup__price">
+              <p class="popup__price-value">58.50 P</p>
+            </div>
+            <button aria-label="Купить" type="button" class="popup__buy-button">Купить</button>
+          </div>
+          <div class="popup__additional-info">
+            <div class="popup__metric-container">
+              <label for="gbInput">ГБ:
+                <input type="text" class="popup__input" id="gbInput">
+              </label>
+              <div class="popup__widgets">
+                <img src="./images/up-arrow.svg" alt="" class="popup__up-arrow">
+                <img src="./images/down-arrow.svg" alt="" class="popup__down-arrow">
+              </div>
+              <img src="./images/inf-pink.svg" alt="" class="popup__infinite-btn">
+            </div>
+            <div class="popup__metric-container">
+              <label for="minInput">Мин:
+                <input type="text" class="popup__input" id="minInput">
+              </label>
+              <div class="popup__widgets">
+                <img src="./images/up-arrow.svg" alt="" class="popup__up-arrow">
+                <img src="./images/down-arrow.svg" alt="" class="popup__down-arrow">
+              </div>
+              <img src="./images/inf-grey.svg" alt="" class="popup__infinite-btn">
+            </div>
+            <div class="popup__socials">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+              <img src="./images/inf-pink.svg" alt="" class="popup__social">
+            </div>
+          </div>
         </div>
-      </div>
 
-    </seсtion>
-  </div>
+      </seсtion>
+    </div>
 </div>
 
 <template id="element">
