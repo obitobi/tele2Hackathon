@@ -53,7 +53,7 @@ function showHelloAnsw() {
   fBtn.textContent = 'Много';
   sBtn.textContent = 'Средне';
   tBtn.addEventListener('click', function () {
-    renderCard(createNewDialogPair('Hello, Drone, kak dela? Skok Gb?'));
+    renderCard(createNewDialogPair('Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolo sit?'));
   });
 }
 
