@@ -159,12 +159,10 @@
 }
 
 .dialog__avatar {
-  /* margin: 10px 0 4px; */
   margin: 10px 0 0;
 }
 
 .dialog__question {
-  /* display: flex; */
   display: grid;
   grid-template-columns: 10% 80%;
   grid-template-rows: 1fr;
@@ -177,16 +175,6 @@
 }
 
 .dialog__box_question {
-  /* background-image: url(./images/chat-question.svg);
-  background-repeat: no-repeat; */
-  /* background-position: right;
-  background-size: contain; */
-  /* text-align: left; */
-  /* padding: 25px; */
-  /* display: flex;
-
-  flex-direction: column;
-  justify-content: center; */
   border: 1px solid #FF59A3;
   border-radius: 10px 10px 10px 0;
   position: relative;
@@ -218,6 +206,41 @@
   position: absolute;
   top: 0;
   right: -8px;
+}
+
+
+.popup__chat-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px 18px;
+}
+
+.popup__answer-button {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  border: 1px solid #1F2229;
+  border-radius: 21px;
+  background-color: transparent;
+  color: #1F2229;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  /* transition: background-color 0.2s ease-in-out; */
+}
+
+.popup__answer-button:hover {
+  border: none;
+  background-color: #ff59a34d;
+
+}
+
+.popup__answer-button:focus {
+  outline: none;
+  border: none;
+  background-color: #ff59a34d;
 }
 
 
