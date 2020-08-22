@@ -8,6 +8,10 @@
   margin: auto 0;
 }
 
+.invisible {
+  display: none;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -85,8 +89,6 @@
   min-height: 100vh;
   margin: 0 auto;
   font-family: "Tele2 TextSans Web SHORT", Arial, sans-serif;
-  /* background-color: #000000;
-  color: #fff; */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -95,22 +97,12 @@
 }
 
 .popup {
-  /*position: fixed;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
   background-color: #fff;
   box-sizing: border-box;
-  /*padding: 0 50px;*/
   display: flex;
   z-index: 2;
-
   visibility: visible;
   opacity: 1;
-  overflow-y: scroll;
-  /* visibility: hidden;
-  opacity: 0; */
   transition: visibility 0.3s ease, opacity 0.3s ease-in-out;
 }
 
@@ -122,7 +114,8 @@
 .popup__container {
   display: flex;
   width: 80%;
-  margin: auto;
+  justify-content: center;
+  margin: 60px auto 120px;
 }
 
 .popup__chat {
@@ -192,7 +185,7 @@
 }
 
 .dialog__box_answer {
-  margin: 15px 10px 0 auto;
+  margin: 15px 10px 15px auto;
   width: 80%;
   background-color: #ff59a34d;
   border-radius: 10px 0 10px 10px;
@@ -226,7 +219,6 @@
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
-  /* transition: background-color 0.2s ease-in-out; */
 }
 
 .popup__answer-button:hover {
@@ -354,4 +346,65 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 32px);
   grid-gap: 6px;
+}
+
+.footer {
+  min-height: 350px;
+  background-color: #1F2229;
+  padding-top: 50px;
+  padding-bottom: 104px;
+  box-sizing: border-box;
+}
+
+.footer__columns {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  color: white;
+
+}
+
+.footer__column_content_about {
+  width: 360px;
+}
+
+.footer__column_content_telephone {
+  width: 260px;
+}
+
+.footer__column_content_social {
+  width: 260px;
+}
+
+.footer__tele2 {
+  margin: 0px 0px 30px 0px;
+  color: white;
+}
+
+.main {
+  padding-bottom: 50px;
+}
+
+.footer__column {
+  font-size: 16px;
+}
+
+.footer_wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer__column-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list-item {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer__column_social {
+  text-decoration: underline;
 }

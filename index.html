@@ -63,15 +63,15 @@
                   <img src="./images/tail-pink.svg" alt="" class="dialog__box_question-tail">
                 </div>
               </div>
-              <div class="dialog__box dialog__box_answer">
+              <div class="dialog__box dialog__box_answer" id="firstAnsw">
                 <p class="dialog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <img src="./images/tail-pink-opacity.svg" alt="" class="dialog__box_answer-tail">
               </div>
             </li>
           </ul>
           <div class="popup__chat-buttons">
-            <button aria-label="Дать ответ" type="button" class="popup__answer-button" id="first">Много</button>
-            <button aria-label="Дать ответ" type="button" class="popup__answer-button" id="second">Средне</button>
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button" id="first">Привет, давай</button>
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button" id="second">Не надо, спасибо</button>
             <button aria-label="Дать ответ" type="button" class="popup__answer-button" id="third">Мало</button>
             <button aria-label="Закрыть чат" type="button" class="popup__answer-button popup__close-button" id="forth">Давай
               закончим
@@ -130,6 +130,40 @@
       </seсtion>
     </div>
   </main>
+  <footer class="footer">
+    <div class="footer_wrap">
+      <p class="footer__tele2">&copy; Tele2 Россия, 2020</p>
+      <div class="footer__columns">
+        <div class="footer__column footer__column_content_about">
+          <p class="footer__text">С 4 апреля 2013 года Теле2 Россия Интернешнл Селлулар БВ и ее аффилированные лица не
+            принадлежат или не являются аффилированными с Теле2 АБ и любой ее дочерней компанией. Товарный знак Tele2
+            используется на основании лицензии от Теле2 АБ или ее дочерней компании.</p>
+        </div>
+        <div class="footer__column footer__column_content_telephone">
+          <p class="footer__column-phone">8 (495) 97-97-611</p>
+          <p class="footer__column-phone">Для звонков с городских телефонов</p>
+          <p class="footer__column-phone">611</p>
+          <p class="footer__column-phone">Для звонков с телефонов, подключенных к Tele2</p>
+        </div>
+        <div class="footer__column footer__column_content_social">
+          <p class="footer__column_social">Политикa Компаний Группы Tele2</p>
+          <p class="footer__column_social">Правилами пользования личным кабинетом</p>
+
+          <ul class="footer__column-links">
+            <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img
+                  src="images/facebook.svg" alt="Facebook" class="footer__social-icon"></a></li>
+            <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img
+                  src="images/youtube.svg" alt="youtube" class="footer__social-icon"></a></li>
+            <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img
+                  src="images/vk.svg" alt="vk" class="footer__social-icon"></a></li>
+            <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img
+                  src="images/ok2.svg" alt="ok" class="footer__social-icon"></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 
 
@@ -141,17 +175,12 @@
         <img src="./images/tele2ded.jpg" alt="" class="dialog__avatar">
       </div>
       <div class="dialog__box dialog__box_question">
-        <p class="dialog__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
-          sit
-          amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
-          ipsum
-          dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. </p>
+        <p class="dialog__text" id="question"></p>
         <img src="./images/tail-pink.svg" alt="" class="dialog__box_question-tail">
       </div>
     </div>
     <div class="dialog__box dialog__box_answer">
-      <p class="dialog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="dialog__text" id="answ"></p>
       <img src="./images/tail-pink-opacity.svg" alt="" class="dialog__box_answer-tail">
     </div>
   </li>
