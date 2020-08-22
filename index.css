@@ -159,20 +159,38 @@
 }
 
 .dialog__avatar {
-  margin: 10px 0 4px;
+  /* margin: 10px 0 4px; */
+  margin: 10px 0 0;
 }
 
 .dialog__question {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 32px 333px;
+  grid-template-rows: 71px;
+  grid-gap: 3px;
+
+}
+
+.dialog__name {
+  margin: 0;
 }
 
 .dialog__box_question {
   background-image: url(./images/chat-question.svg);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  text-align: left;
-  padding: 25px;
+  /* background-position: right;
+  background-size: contain; */
+  /* text-align: left; */
+  /* padding: 25px; */
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dialog__text {
+  margin: 0 20px;
 }
 
 .dialog__box_answer {
