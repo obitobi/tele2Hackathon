@@ -57,8 +57,8 @@ function initPage() {
   tBtn.classList.add('invisible');
   fBtn.addEventListener('click', showHelloAnsw);
   forthBtn.classList.add('invisible');
-  fBtn.textContent = 'Hello!';
-  sBtn.textContent = 'Goodbye!';
+  fBtn.textContent = 'Привет, давай';
+  sBtn.textContent = 'Нет, спасибо';
   firstAnsw.classList.add('invisible');
 }
 
@@ -69,7 +69,7 @@ function showHelloAnsw() {
   fBtn.textContent = 'Много';
   sBtn.textContent = 'Средне';
   tBtn.addEventListener('click', function () {
-    renderCard(createNewDialogPair('Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolo sit?'));
+    renderCard(createNewDialogPair('Привет, давай!'));
   });
 }
 
