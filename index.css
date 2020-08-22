@@ -148,7 +148,7 @@
   margin-top: auto;
 }
 
-.dailog__ava-container {
+.dialog__ava-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,6 +270,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.popup__currency {
+  width: 14px;
+  height: 31px;
+  position: absolute;
+  top: 70px;
+  right: 60px;
 }
 
 .popup__your-plan-title-container {
