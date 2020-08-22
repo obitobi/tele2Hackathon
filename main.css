@@ -337,7 +337,7 @@ input:checked+.unlimited__slider:before {
 
 /* КОНЕЦ БЛОК plan-info*/
 
-.triangle {
+/* .triangle {
   background-image: url(./images/triangle.svg);
   background-repeat: no-repeat;
   width: 109%;
@@ -346,4 +346,4 @@ input:checked+.unlimited__slider:before {
   bottom: 0;
   left: 0;
   background-size: contain;
-}
+} */
