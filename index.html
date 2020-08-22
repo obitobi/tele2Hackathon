@@ -46,7 +46,6 @@
       <seсtion class="popup__container">
         <div class="popup__chat">
           <h2 class="popup__title">Настрой свой план</h2>
-
           <ul class="popup__dialog">
             <li class="dialog">
               <div class="dialog__question">
@@ -71,10 +70,10 @@
             </li>
           </ul>
           <div class="popup__chat-buttons">
-            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Много</button>
-            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Средне</button>
-            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Мало</button>
-            <button aria-label="Закрыть чат" type="button" class="popup__answer-button popup__close-button">Давай
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button" id="first">Много</button>
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button" id="second">Средне</button>
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button" id="third">Мало</button>
+            <button aria-label="Закрыть чат" type="button" class="popup__answer-button popup__close-button" id="forth">Давай
               закончим
             </button>
           </div>
@@ -132,13 +131,27 @@
   </main>
 </div>
 
-<template id="element">
-  <li class="element">
-    <button aria-label="Удалить" type="button" class="element__delete"></button>
-    <img src="" alt="Картинка места" class="element__img"/>
-    <div class="element__description">
-      <h2 class="element__title"></h2>
-      <button aria-label="Лайк" type="button" class="element__like"></button>
+
+<template id="dialog__element">
+  <li class="dialog">
+    <div class="dialog__question">
+      <div class="dailog__ava-container">
+        <p class="dialog__name">Tele2</p>
+        <img src="./images/tele2ded.jpg" alt="" class="dialog__avatar">
+      </div>
+      <div class="dialog__box dialog__box_question">
+        <p class="dialog__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
+          sit
+          amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem
+          ipsum
+          dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. </p>
+        <img src="./images/tail-pink.svg" alt="" class="dialog__box_question-tail">
+      </div>
+    </div>
+    <div class="dialog__box dialog__box_answer">
+      <p class="dialog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <img src="./images/tail-pink-opacity.svg" alt="" class="dialog__box_answer-tail">
     </div>
   </li>
 </template>
