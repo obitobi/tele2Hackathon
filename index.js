@@ -17,6 +17,9 @@ const questions = [
   },
 ]
 
+const socialsBtn = document.querySelectorAll('.popup__social');
+const infBtn = document.querySelectorAll('.popup__infinite-btn');
+
 const fBtn = document.querySelector('#first');
 const sBtn = document.querySelector('#second');
 const tBtn = document.querySelector('#third');
@@ -26,12 +29,25 @@ const firstAnsw = document.querySelector('#firstAnsw');
 const qaTemplate = document.querySelector('#dialog__element').content;
 const qaList = document.querySelector('.popup__dialog');
 
+socialsBtn.forEach(function (item) {
+  item.addEventListener('click', function (evt) {
+    evt.target.classList.toggle('popup__social-colored');
+  })
+});
+
+infBtn.forEach(function (item) {
+  item.addEventListener('click', function (evt) {
+    evt.target.classList.toggle('popup__inf-colored');
+  })
+});
+
 function createNewDialogPair(text) {
   const qaEl = qaTemplate.cloneNode(true);
   qaEl.querySelector('#answ').classList.add('invisible');
   qaEl.querySelector('#question').textContent = text;
   return qaEl;
 }
+
 
 function renderCard(qaEl) {
   qaList.append(qaEl);
