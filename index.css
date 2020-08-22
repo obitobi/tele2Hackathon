@@ -8,6 +8,10 @@
   margin: auto 0;
 }
 
+.invisible {
+  display: none;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -196,7 +200,7 @@
 }
 
 .dialog__box_answer {
-  margin: 15px 10px 0 auto;
+  margin: 15px 10px 15px auto;
   width: 80%;
   background-color: #ff59a34d;
   border-radius: 10px 0 10px 10px;
