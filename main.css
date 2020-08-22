@@ -222,6 +222,12 @@
   opacity: 1;
 }
 
+.unlimited__button_hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
 /**/
 
 
