@@ -338,7 +338,7 @@ input:checked+.unlimited__slider:before {
 
 /* КОНЕЦ БЛОК plan-info*/
 
-/* .triangle {
+.triangle {
   background-image: url(./images/triangle.svg);
   background-repeat: no-repeat;
   min-width: 100%;
@@ -348,18 +348,6 @@ input:checked+.unlimited__slider:before {
   left: 0;
   background-size: cover;
 }
-
-/* .triangle {
-  background-image: url(./images/triangle.svg);
-  background-repeat: no-repeat;
-  position: absolute; 
-  bottom: 0; 
-  left: 0; 
-
-  
-  min-width: 100%;
-  min-height: 100%;
-} */
 
 .footer {
   min-height: 350px;
