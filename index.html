@@ -2,50 +2,50 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tele2</title>
-  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-<div class="page">
-  <header class="header">
-    <img src="./images/logo.svg" alt="logo" class="header__icon">
-    <ul class="header__links">
-      <li><a href="#" class="header__link">
-        Номера
-      </a></li>
-      <li><a href="#" class="header__link">
-        Перейти в Tele2
-      </a></li>
-      <li><a href="#" class="header__link">
-        Тарифы
-      </a></li>
-      <li><a href="#" class="header__link">
-        Смартфоны
-      </a></li>
-      <li><a href="#" class="header__link">
-        Доставка и оплата
-      </a></li>
-    </ul>
-    <div class="header__stuff">
-      <div class="header__stuff-container">
-        <img src="./images/profile-logo.png" alt="" class="header__stuff-logo">
-        <a href="#" class="header__stuff-link">Войти в кабинет</a>
-      </div>
-      <div class="header__stuff-container">
-        <img src="./images/cart-logo.png" alt="" class="header__stuff-logo">
-        <a href="#" class="header__stuff-link">Корзина пока пуста</a>
-      </div>
+  <div class="page">
+    <header class="header">
+      <img src="./images/logo.svg" alt="logo" class="header__icon">
+      <ul class="header__links">
+        <li><a href="#" class="header__link">
+            Номера
+          </a></li>
+        <li><a href="#" class="header__link">
+            Перейти в Tele2
+          </a></li>
+        <li><a href="#" class="header__link">
+            Тарифы
+          </a></li>
+        <li><a href="#" class="header__link">
+            Смартфоны
+          </a></li>
+        <li><a href="#" class="header__link">
+            Доставка и оплата
+          </a></li>
+      </ul>
+      <div class="header__stuff">
+        <div class="header__stuff-container">
+          <img src="./images/profile-logo.png" alt="" class="header__stuff-logo">
+          <a href="#" class="header__stuff-link">Войти в кабинет</a>
+        </div>
+        <div class="header__stuff-container">
+          <img src="./images/cart-logo.png" alt="" class="header__stuff-logo">
+          <a href="#" class="header__stuff-link">Корзина пока пуста</a>
+        </div>
 
-    </div>
-  </header>
+      </div>
+    </header>
 
-  <main class="main">
-    <h1 class="main__title">Подходящий тариф</h1>
-    <section class="main__tariff">
-      <div class="constructor">
+    <main class="main">
+      <h1 class="main__title">Подходящий тариф</h1>
+      <section class="main__tariff">
+        <div class="constructor">
 
           <button aria-label="Купить" type="button" class="constructor__buy-button">Купить!</button>
 
@@ -64,42 +64,48 @@
       </section>
     </main>
 
-  <footer class="footer">
+    <footer class="footer">
 
-  </footer>
+    </footer>
 
 
     <div class="popup">
-      <header class="header">
+      <seсtion class="popup__container">
+        <div class="popup__chat">
+          <h2 class="popup__title">Настрой свой план</h2>
 
-      </header>
-      <setion class="popup__container">
-        <h2 class="popup__title">Настрой свой план</h2>
-        <ul class="popup__chat">
-          <li class="dialog">
-            <div class="dialog__question">
-              <p class="dialog__name">Теле2</p>
-              <img src="./images/dialog-ava.png" alt="Аватарка">
-              <p> Давай подберем план, я задам всего 3 вопроса.</p>
-            </div>
-            <div class="dialog__answer">Привет, Ок</div>
+          <ul class="popup__dialog">
+            <li class="dialog">
+              <div class="dialog__question">
 
-          </li>
+                <div class="dailog__ava-container">
+                  <p class="dialog__name">Tele2</p>
+                  <img src="./images/dialog-ava.png" alt="" class="dialog__avatar">
+                </div>
 
-        </ul>
-        <button aria-label="Дать ответ" type="button" class="popup__answer-button">Много</button>
-        <button aria-label="Дать ответ" type="button" class="popup__answer-button">Средне</button>
-        <button aria-label="Дать ответ" type="button" class="popup__answer-button">Мало</button>
-        <button aria-label="Закрыть чат" type="button" class="popup__answer-button popup__close-button">Давай закончим</button>
-        <!-- <div class="popup__plan">
-          <h3 class="popup__plan-title">Твой план</h3>
-          <p class="popup__plan-description">Безлимит на Tele2 России</p>
-          <button aria-label="Купить" type="button" class="constructor__buy-button">Купить</button>
-        </div> -->
-      </setion>
-      <footer class="footer">
+                <div class="dialog__box dialog__box_question">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
 
-      </footer>
+              </div>
+
+              <div class="dialog__box dialog__box_answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </li>
+          </ul>
+
+          <div class="popup__chat-buttons">
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Много</button>
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Средне</button>
+            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Мало</button>
+            <button aria-label="Закрыть чат" type="button" class="popup__answer-button popup__close-button">Давай закончим</button>
+          </div>
+        </div>
+        <div class="popup__your-plan">
+          <div></div>
+
+        </div>
+
+      </seсtion>
     </div>
   </div>
 
