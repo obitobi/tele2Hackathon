@@ -131,7 +131,6 @@
 .popup__chat {
   width: 430px;
   height: 630px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -244,7 +243,6 @@
 .popup__your-plan {
   width: 480px;
   height: 450px;
-  border: 1px solid red;
   margin-left: 150px;
   align-self: center;
   display: flex;
@@ -257,6 +255,7 @@
 }
 
 .popup__price {
+  margin: 27px 0 28px 0;
   border: 4px solid #FF59A3;
   width: 257px;
   height: 257px;
@@ -264,4 +263,80 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.popup__your-plan-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup__your-plan-title {
+  font-size: 28px;
+  margin: 0 0 17px 0;
+}
+
+.popup__your-plan-subtitle {
+  font-size: 16px;
+  margin: 0 0 27px 0;
+}
+
+.popup__price-value {
+  font-size: 54px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.popup__buy-button {
+  width: 220px;
+  height: 60px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  background-color: #1F2229;
+}
+
+.popup__additional-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.popup__input {
+  border: 0;
+  border-bottom: 1px solid #1F2229;
+  padding: 0 0 13px 0;
+  width: 100%;
+  margin: 5px 0 5px 0;
+  outline: none;
+}
+
+.popup__metric-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 175px;
+  height: 55px;
+  margin-bottom: 30px;
+}
+
+.popup__widgets {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 10px;
+}
+
+.popup__up-arrow {
+  margin-bottom: 15px;
+}
+
+.popup__socials {
+  max-width: 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 32px);
+  grid-gap: 6px;
 }
