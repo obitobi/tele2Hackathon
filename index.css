@@ -93,8 +93,6 @@
   min-height: 100vh;
   margin: 0 auto;
   font-family: "Tele2 TextSans Web SHORT", Arial, sans-serif;
-  /* background-color: #000000;
-  color: #fff; */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -103,22 +101,12 @@
 }
 
 .popup {
-  /*position: fixed;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
   background-color: #fff;
   box-sizing: border-box;
-  /*padding: 0 50px;*/
   display: flex;
   z-index: 2;
-
   visibility: visible;
   opacity: 1;
-  overflow-y: scroll;
-  /* visibility: hidden;
-  opacity: 0; */
   transition: visibility 0.3s ease, opacity 0.3s ease-in-out;
 }
 
@@ -130,7 +118,8 @@
 .popup__container {
   display: flex;
   width: 80%;
-  margin: auto;
+  justify-content: center;
+  margin-top: 60px;
 }
 
 .popup__chat {
@@ -234,7 +223,6 @@
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
-  /* transition: background-color 0.2s ease-in-out; */
 }
 
 .popup__answer-button:hover {
