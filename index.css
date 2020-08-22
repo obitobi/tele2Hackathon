@@ -98,18 +98,15 @@
 }
 
 .popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  /*position: fixed;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
   background-color: #fff;
-  /* align-items: center;
-  justify-content: center; */
   box-sizing: border-box;
-  padding: 0 50px;
+  /*padding: 0 50px;*/
   display: flex;
-  /* display: none; */
   z-index: 2;
 
   visibility: visible;
@@ -250,4 +247,21 @@
   border: 1px solid red;
   margin-left: 150px;
   align-self: center;
+  display: flex;
+}
+
+.popup__main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup__price {
+  border: 4px solid #FF59A3;
+  width: 257px;
+  height: 257px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -2,129 +2,113 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tele2</title>
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index.css"/>
 </head>
 
 <body>
-  <div class="page">
-    <header class="header">
-      <img src="./images/logo.svg" alt="logo" class="header__icon">
-      <ul class="header__links">
-        <li><a href="#" class="header__link">
-            Номера
-          </a></li>
-        <li><a href="#" class="header__link">
-            Перейти в Tele2
-          </a></li>
-        <li><a href="#" class="header__link">
-            Тарифы
-          </a></li>
-        <li><a href="#" class="header__link">
-            Смартфоны
-          </a></li>
-        <li><a href="#" class="header__link">
-            Доставка и оплата
-          </a></li>
-      </ul>
-      <div class="header__stuff">
-        <div class="header__stuff-container">
-          <img src="./images/profile-logo.png" alt="" class="header__stuff-logo">
-          <a href="#" class="header__stuff-link">Войти в кабинет</a>
-        </div>
-        <div class="header__stuff-container">
-          <img src="./images/cart-logo.png" alt="" class="header__stuff-logo">
-          <a href="#" class="header__stuff-link">Корзина пока пуста</a>
-        </div>
-
+<div class="page">
+  <header class="header">
+    <img src="./images/logo.svg" alt="logo" class="header__icon">
+    <ul class="header__links">
+      <li><a href="#" class="header__link">
+        Номера
+      </a></li>
+      <li><a href="#" class="header__link">
+        Перейти в Tele2
+      </a></li>
+      <li><a href="#" class="header__link">
+        Тарифы
+      </a></li>
+      <li><a href="#" class="header__link">
+        Смартфоны
+      </a></li>
+      <li><a href="#" class="header__link">
+        Доставка и оплата
+      </a></li>
+    </ul>
+    <div class="header__stuff">
+      <div class="header__stuff-container">
+        <img src="./images/profile-logo.png" alt="" class="header__stuff-logo">
+        <a href="#" class="header__stuff-link">Войти в кабинет</a>
       </div>
-    </header>
+      <div class="header__stuff-container">
+        <img src="./images/cart-logo.png" alt="" class="header__stuff-logo">
+        <a href="#" class="header__stuff-link">Корзина пока пуста</a>
+      </div>
+    </div>
+  </header>
 
-    <main class="main">
-      <h1 class="main__title">Подходящий тариф</h1>
-      <section class="main__tariff">
-        <div class="constructor">
+  <main class="main">
+  <div class="popup">
+    <seсtion class="popup__container">
+      <div class="popup__chat">
+        <h2 class="popup__title">Настрой свой план</h2>
 
-          <button aria-label="Купить" type="button" class="constructor__buy-button">Купить!</button>
-
-        </div>
-        <ul class="side-bar">
-          <li class="side-bar__tariff">
-            <button aria-label="Купить" type="button" class="constructor__buy-button">Купить</button>
-          </li>
-          <li class="side-bar__tariff">
-            <button aria-label="Купить" type="button" class="constructor__buy-button">Купить</button>
+        <ul class="popup__dialog">
+          <li class="dialog">
+            <div class="dialog__question">
+              <div class="dailog__ava-container">
+                <p class="dialog__name">Tele2</p>
+                <img src="./images/dialog-ava.png" alt="" class="dialog__avatar">
+              </div>
+              <div class="dialog__box dialog__box_question">
+                <p class="dialog__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. </p>
+                <img src="./images/tail-pink.svg" alt="" class="dialog__box_question-tail">
+              </div>
+            </div>
+            <div class="dialog__box dialog__box_answer">
+              <p class="dialog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <img src="./images/tail-pink-opacity.svg" alt="" class="dialog__box_answer-tail">
+            </div>
           </li>
         </ul>
-
-        <button aria-label="Открыть чат-бот" type="button" class="main__button-chat">Открыть чат-бот</button>
-
-      </section>
-    </main>
-
-    <footer class="footer">
-
-    </footer>
-
-
-    <div class="popup">
-      <seсtion class="popup__container">
-        <div class="popup__chat">
-          <h2 class="popup__title">Настрой свой план</h2>
-
-          <ul class="popup__dialog">
-            <li class="dialog">
-              <div class="dialog__question">
-
-                <div class="dailog__ava-container">
-                  <p class="dialog__name">Tele2</p>
-                  <img src="./images/dialog-ava.png" alt="" class="dialog__avatar">
-                </div>
-
-                <div class="dialog__box dialog__box_question">
-                  <p class="dialog__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. </p>
-                  <img src="./images/tail-pink.svg" alt="" class="dialog__box_question-tail">
-                </div>
-
-              </div>
-
-              <div class="dialog__box dialog__box_answer">
-                <p class="dialog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <img src="./images/tail-pink-opacity.svg" alt="" class="dialog__box_answer-tail">
-              </div>
-            </li>
-          </ul>
-
-          <div class="popup__chat-buttons">
-            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Много</button>
-            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Средне</button>
-            <button aria-label="Дать ответ" type="button" class="popup__answer-button">Мало</button>
-            <button aria-label="Закрыть чат" type="button" class="popup__answer-button popup__close-button">Давай закончим</button>
+        <div class="popup__chat-buttons">
+          <button aria-label="Дать ответ" type="button" class="popup__answer-button">Много</button>
+          <button aria-label="Дать ответ" type="button" class="popup__answer-button">Средне</button>
+          <button aria-label="Дать ответ" type="button" class="popup__answer-button">Мало</button>
+          <button aria-label="Закрыть чат" type="button" class="popup__answer-button popup__close-button">Давай
+            закончим
+          </button>
+        </div>
+      </div>
+      <div class="popup__your-plan">
+        <div class="popup__main-info">
+          <div class="popup__your-plan-title-container">
+            <h2 class="popup__your-plan-title">ТВОЙ ПЛАН</h2>
+            <p class="popup__your-plan-subtitle">Безлимит на Tele2 Россия</p>
+          </div>
+          <div class="popup__price">
+            <p class="popup_price-value">58.50 P</p>
           </div>
         </div>
-        <div class="popup__your-plan">
-          <div></div>
-
+        <div class="popup__additional-info">
+          <div class="popup__gb"></div>
+          <div class="popup__min"></div>
+          <div class="popup__social"></div>
         </div>
-
-      </seсtion>
-    </div>
-  </div>
-
-  <template id="element">
-    <li class="element">
-      <button aria-label="Удалить" type="button" class="element__delete"></button>
-      <img src="" alt="Картинка места" class="element__img" />
-      <div class="element__description">
-        <h2 class="element__title"></h2>
-        <button aria-label="Лайк" type="button" class="element__like"></button>
       </div>
-    </li>
-  </template>
-  <script type="module" src="index.js"></script>
+
+    </seсtion>
+  </div>
+</div>
+
+<template id="element">
+  <li class="element">
+    <button aria-label="Удалить" type="button" class="element__delete"></button>
+    <img src="" alt="Картинка места" class="element__img"/>
+    <div class="element__description">
+      <h2 class="element__title"></h2>
+      <button aria-label="Лайк" type="button" class="element__like"></button>
+    </div>
+  </li>
+</template>
+<script type="module" src="index.js"></script>
 </body>
 
 </html>
