@@ -316,7 +316,12 @@
   font-size: 54px;
   font-style: normal;
   font-weight: normal;
+  margin: 0;
+}
+
+.popup__price-wrap {
   position: relative;
+  display: inline-block;
 }
 
 .popup__buy-button {
@@ -489,7 +494,9 @@
     align-items: center;
   }
   .popup__buy-button {
-    display: none;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 15px;
   }
   .popup__price {
     margin: 0 0 15px 0;
