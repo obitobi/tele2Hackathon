@@ -140,6 +140,13 @@ function initPage() {
 }
 
 function showQAPair(evt, answText, qText) {
+  console.log(evt.target.textContent);
+  if (evt.target.textContent === 'Хочу донастроить' ||
+      evt.target.textContent === 'Нет, спасибо' ||
+      evt.target.textContent === 'Давай закончим') {
+    linkToMain.click();
+  }
+
 
   if (i === 5) {
     sBtn.addEventListener('click', linkToMain.click());
@@ -156,7 +163,7 @@ function showQAPair(evt, answText, qText) {
     sBtn.classList.add('invisible');
     forthBtn.classList.add('invisible');
     fBtn.textContent = 'Беру!';
-    sBtn.textContent = 'Хочу донастроить';
+    tBtn.textContent = 'Хочу донастроить';
   }
 }
 
