@@ -653,7 +653,7 @@ input:disabled {
   }
 
   .popup__your-plan-title {
-    margin: 50px 0 0 0;
+    margin: 50px 0px 0px 0px;
   }
 
   .popup__your-plan-title-container {
@@ -675,5 +675,9 @@ input:disabled {
 
   .footer__text2 {
     display: none;
+  }
+
+  .popup__metric-container:last-of-type {
+    margin-left: 21px;
   }
 }
