@@ -2,210 +2,223 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tele2</title>
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="main.css"/>
 
 
 </head>
 
 <body>
-  <div class="page">
-    <header class="header">
-      <div class="header__wrap">
-        <img src="./images/logo-white.svg" alt="logo" class="header__icon">
-        <ul class="header__links">
-          <li><a href="#" class="header__link">
-              Номера
-            </a></li>
-          <li><a href="#" class="header__link">
-              Перейти в Tele2
-            </a></li>
-          <li><a href="#" class="header__link">
-              Тарифы
-            </a></li>
-          <li><a href="#" class="header__link">
-              Смартфоны
-            </a></li>
-          <li><a href="#" class="header__link">
-              Доставка и оплата
-            </a></li>
-        </ul>
-        <div class="header__stuff">
-          <div class="header__stuff-container">
-            <img src="./images/profile-logo.svg" alt="" class="header__stuff-logo">
-            <a href="#" class="header__stuff-link">Войти в кабинет</a>
-          </div>
-          <div class="header__stuff-container">
-            <img src="./images/cart-logo.svg" alt="" class="header__stuff-logo">
-            <a href="#" class="header__stuff-link">Корзина пока пуста</a>
-          </div>
+<div class="page">
+  <header class="header">
+    <div class="header__wrap">
+      <img src="./images/logo-white.svg" alt="logo" class="header__icon">
+      <ul class="header__links">
+        <li><a href="#" class="header__link">
+          Номера
+        </a></li>
+        <li><a href="#" class="header__link">
+          Перейти в Tele2
+        </a></li>
+        <li><a href="#" class="header__link">
+          Тарифы
+        </a></li>
+        <li><a href="#" class="header__link">
+          Смартфоны
+        </a></li>
+        <li><a href="#" class="header__link">
+          Доставка и оплата
+        </a></li>
+      </ul>
+      <div class="header__stuff">
+        <div class="header__stuff-container">
+          <img src="./images/profile-logo.svg" alt="" class="header__stuff-logo">
+          <a href="#" class="header__stuff-link">Войти в кабинет</a>
         </div>
-    </header>
-    <main class="main">
-      <div class="main__box">
-        <div class="column__one">
-          <h1 class="main__title">Подходящие тарифы</h1>
-          <a href="./index.html" class="bot-link"> <img src="./images/arrow-left.svg" alt="стрелочка вправо" class="bot-link__arrow"> Назад к выбору плана</a>
-          <h2 class="main__subtitle">Твой план</h2>
-          <div class="popup__metric">
-            <div class="popup__metric-column">
-              <p class="plan-info__text"><img src="./images/phone.svg" alt="иконка" class="plan-info__icon">Звонки</p>
-              <div class="popup__metric-container popup__metric-container_main">
-
-                <label for="minInput" class="label-min">Мин:
-                  <input type="number" class="popup__input" id="minInput" value="100" min="0" max="1000">
-                  <img src="./images/infinity.svg" alt="иконка" class="plan-info__icon plan-info__icon-label-min">
-                </label>
-                <div class="popup__widgets">
-                  <img src="./images/up-arrow.svg" alt="" class="popup__arrow popup__up-arrow popup__up-arrow-min">
-                  <img src="./images/down-arrow.svg" alt="" class="popup__arrow popup__down-arrow popup__down-arrow-min">
-                </div>
-                <img src="./images/inf-pink.svg" alt="" class="popup__infinite-btn popup__infinite-btn-min">
-              </div>
-            </div>
-            <div class="popup__metric-column">
-              <p class="plan-info__text"><img src="./images/connect.svg" alt="иконка" class="plan-info__icon">Интернет</p>
-              <div class="popup__metric-container popup__metric-container_main">
-                <label for="gbInput" class="label-gb">ГБ:
-                  <input type="number" class="popup__input" id="gbInput" value="10" min="0" max="1000">
-                  <img src="./images/infinity.svg" alt="иконка" class="plan-info__icon plan-info__icon-label-gb">
-                </label>
-                <div class="popup__widgets">
-                  <img src="./images/up-arrow.svg" alt="" class="popup__arrow popup__up-arrow popup__up-arrow-gb">
-                  <img src="./images/down-arrow.svg" alt="" class="popup__arrow popup__down-arrow popup__down-arrow-gb">
-                </div>
-                <img src="./images/inf-pink.svg" alt="" class="popup__infinite-btn popup__infinite-btn-gb">
-              </div>
-            </div>
-
-          </div>
-
-          <div class="unlimited">
-            <p class="unlimited__title "><img src="./images/infinity.svg" alt="иконка" class="plan-info__icon">безлимитные услуги</p>
-
-            <ul class="unlimited__list">
-              <li class="unlimited__item unlimited__item-social unlimited__item_active">Соц. сети</li>
-              <li class="unlimited__item unlimited__item-messenger">Мессенджеры</li>
-              <li class="unlimited__item unlimited__item-music">Музыка</li>
-              <li class="unlimited__item unlimited__item-video">Видео</li>
-              <li class="unlimited__item unlimited__item-other">Другое</li>
-            </ul>
-
-            <div class="unlimited__buttons">
-            </div>
-
-            <div class="unlimited__switch-block">
-              <label class="unlimited__switch">
-                <input type="checkbox">
-                <span class="unlimited__slider"></span>
-              </label>
-              <p class="unlimited__switch-title">«Пакет минут расходуется на городские номера»</p>
-            </div>
-            <div class="unlimited__switch-block">
-              <label class="unlimited__switch">
-                <input type="checkbox" checked>
-                <span class="unlimited__slider"></span>
-              </label>
-              <p class="unlimited__switch-title">Безлимитные SMS</p>
-            </div>
-          </div>
-
+        <div class="header__stuff-container">
+          <img src="./images/cart-logo.svg" alt="" class="header__stuff-logo">
+          <a href="#" class="header__stuff-link">Корзина пока пуста</a>
         </div>
+        <div class="header__stuff-container" id="#burger-menu">
+          <img src="./images/burger-menu.svg" alt="" class="header__stuff-logo">
+          <a href="#" class="header__stuff-link">Меню</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__box">
+      <div class="column__one">
+        <h1 class="main__title">Подходящие тарифы</h1>
+        <a href="./index.html" class="bot-link"> <img src="./images/arrow-left.svg" alt="стрелочка вправо"
+                                                      class="bot-link__arrow"> Назад к выбору плана</a>
+        <h2 class="main__subtitle">Твой план</h2>
+        <div class="popup__metric">
+          <div class="popup__metric-column">
+            <p class="plan-info__text"><img src="./images/phone.svg" alt="иконка" class="plan-info__icon">Звонки</p>
+            <div class="popup__metric-container popup__metric-container_main">
 
-        <div class="popup__main-info">
-          <div class="popup__price">
-            <p class="popup__price-value">584
-              <img src="./images/currency.svg" alt="" class="popup__currency">
-            </p>
-
+              <label for="minInput">Мин:
+                <input type="text" class="popup__input" id="minInput">
+              </label>
+              <div class="popup__widgets">
+                <img src="./images/up-arrow.svg" alt="" class="popup__up-arrow">
+                <img src="./images/down-arrow.svg" alt="" class="popup__down-arrow">
+              </div>
+              <img src="./images/inf-grey.svg" alt="" class="popup__infinite-btn">
+            </div>
           </div>
-          <button aria-label="Купить" type="button" class="popup__buy-button">Купить</button>
+          <div class="popup__metric-column">
+            <p class="plan-info__text"><img src="./images/connect.svg" alt="иконка" class="plan-info__icon">Интернет</p>
+            <div class="popup__metric-container popup__metric-container_main">
+              <label for="gbInput">ГБ:
+                <input type="text" class="popup__input" id="gbInput">
+              </label>
+              <div class="popup__widgets">
+                <img src="./images/up-arrow.svg" alt="" class="popup__up-arrow">
+                <img src="./images/down-arrow.svg" alt="" class="popup__down-arrow">
+              </div>
+              <img src="./images/inf-pink.svg" alt="" class="popup__infinite-btn">
+            </div>
+          </div>
+
         </div>
 
         <div class="unlimited">
           <p class="unlimited__title "><img src="./images/infinity.svg" alt="иконка" class="plan-info__icon">безлимитные
             услуги</p>
-          <div class="plan-info">
-            <ul class="plan-info__list">
-              <li class="plan-info__item">
-                <p class="plan-info__text"> <img src="./images/infinity.svg" alt="иконка" class="plan-info__icon"> на Tele2 Россия</p>
-              </li>
-              <li class="plan-info__item">
-                <p class="plan-info__text"> <img src="./images/train.svg" alt="иконка" class="plan-info__icon">поездки по России без доплат</p>
-              </li>
-              <li class="plan-info__item">
-                <p class="plan-info__text"><img src="./images/connect.svg" alt="иконка" class="plan-info__icon">делитесь гигабайтами</p>
-              </li>
-              <li class="plan-info__item">
-                <p class="plan-info__text"><img src="./images/money.svg" alt="иконка" class="plan-info__icon">остатки не сгорают</p>
-              </li>
-              <li class="plan-info__item">
-                <p class="plan-info__text"><img src="./images/phone.svg" alt="иконка" class="plan-info__icon">честные звонки внутри сети</p>
-              </li>
-            </ul>
-            <a href="#" class="plan-info__link">Подробные условия тарифа</a>
+
+          <ul class="unlimited__list">
+            <li class="unlimited__item unlimited__item-social unlimited__item_active">Соц. сети</li>
+            <li class="unlimited__item unlimited__item-messenger">Мессенджеры</li>
+            <li class="unlimited__item unlimited__item-music">Музыка</li>
+            <li class="unlimited__item unlimited__item-video">Видео</li>
+            <li class="unlimited__item unlimited__item-other">Другое</li>
+          </ul>
+
+          <div class="unlimited__buttons">
+          </div>
+
+          <div class="unlimited__switch-block">
+            <label class="unlimited__switch">
+              <input type="checkbox">
+              <span class="unlimited__slider"></span>
+            </label>
+            <p class="unlimited__switch-title">«Пакет минут расходуется на городские номера»</p>
+          </div>
+          <div class="unlimited__switch-block">
+            <label class="unlimited__switch">
+              <input type="checkbox" checked>
+              <span class="unlimited__slider"></span>
+            </label>
+            <p class="unlimited__switch-title">Безлимитные SMS</p>
           </div>
         </div>
-        <div class="triangle"></div>
+        <img src="./images/inf-pink.svg" alt="" class="popup__infinite-btn">
+      </div>
 
-    </main>
-    <footer class="footer">
-      <div class="footer_wrap">
-        <p class="footer__tele2">&copy; Tele2 Россия, 2020</p>
-        <div class="footer__columns">
-          <div class="footer__column footer__column_content_about">
-            <p class="footer__text">С 4 апреля 2013 года Теле2 Россия Интернешнл Селлулар БВ и ее аффилированные лица не
-              принадлежат или не являются аффилированными с Теле2 АБ и любой ее дочерней компанией. Товарный знак Tele2
-              используется на основании лицензии от Теле2 АБ или ее дочерней компании.</p>
-          </div>
-          <div class="footer__column footer__column_content_telephone">
-            <div class="footer__column_city_phone">
-              <p class="footer__column-phone">8 (495) 97-97-611</p>
-              <p class="footer__column-phone">Для звонков с городских телефонов</p>
-            </div>
-            <div class="footer__column_tele2_phone">
-              <p class="footer__column-phone">611</p>
-              <p class="footer__column-phone">Для звонков с телефонов, подключенных к Tele2</p>
-            </div>
-
-          </div>
-          <div class="footer__column footer__column_content_social">
-            <p class="footer__column_social">Политикa Компаний Группы Tele2</p>
-            <p class="footer__column_social">Правилами пользования личным кабинетом</p>
-
-            <ul class="footer__column-links">
-              <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img src="images/facebook.svg" alt="Facebook" class="footer__social-icon"></a></li>
-              <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img src="images/youtube.svg" alt="youtube" class="footer__social-icon"></a></li>
-              <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img src="images/vk.svg" alt="vk" class="footer__social-icon"></a></li>
-              <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img src="images/ok2.svg" alt="ok" class="footer__social-icon"></a></li>
-            </ul>
-
+      <div class="popup__main-info">
+        <div class="popup__price">
+          <div class="popup__price-wrap">
+            <p class="popup__price-value">200</p>
+            <img src="./images/currency.svg" alt="" class="popup__currency">
           </div>
         </div>
+        <button aria-label="Купить" type="button" class="popup__buy-button">Купить</button>
       </div>
-    </footer>
-  </div>
 
-  <template id="icon">
-    <!-- <img src="" alt="Иконка" class="unlimited__button" /> -->
-    <img src="" alt="Иконка" class="popup__social" />
-
-  </template>
-
-  <template id="element">
-    <li class="element">
-      <button aria-label="Удалить" type="button" class="element__delete"></button>
-      <img src="" alt="Картинка места" class="element__img" />
-      <div class="element__description">
-        <h2 class="element__title"></h2>
-        <button aria-label="Лайк" type="button" class="element__like"></button>
+      <div class="unlimited">
+        <p class="unlimited__title "><img src="./images/infinity.svg" alt="иконка" class="plan-info__icon">безлимитные
+          услуги</p>
+        <div class="plan-info">
+          <ul class="plan-info__list">
+            <li class="plan-info__item">
+              <p class="plan-info__text"><img src="./images/infinity.svg" alt="иконка" class="plan-info__icon"> на Tele2
+                Россия</p>
+            </li>
+            <li class="plan-info__item">
+              <p class="plan-info__text"><img src="./images/train.svg" alt="иконка" class="plan-info__icon">поездки по
+                России без доплат</p>
+            </li>
+            <li class="plan-info__item">
+              <p class="plan-info__text"><img src="./images/connect.svg" alt="иконка" class="plan-info__icon">делитесь
+                гигабайтами</p>
+            </li>
+            <li class="plan-info__item">
+              <p class="plan-info__text"><img src="./images/money.svg" alt="иконка" class="plan-info__icon">остатки не
+                сгорают</p>
+            </li>
+            <li class="plan-info__item">
+              <p class="plan-info__text"><img src="./images/phone.svg" alt="иконка" class="plan-info__icon">честные
+                звонки внутри сети</p>
+            </li>
+          </ul>
+          <a href="#" class="plan-info__link">Подробные условия тарифа</a>
+        </div>
       </div>
-    </li>
-  </template>
-  <script type="module" src="main.js"></script>
+      <div class="triangle"></div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer_wrap">
+      <p class="footer__tele2">&copy; Tele2 Россия, 2020</p>
+      <div class="footer__columns">
+        <div class="footer__column footer__column_content_about">
+          <p class="footer__text">С 4 апреля 2013 года Теле2 Россия Интернешнл Селлулар БВ и ее аффилированные лица не
+            принадлежат или не являются аффилированными с Теле2 АБ и любой ее дочерней компанией. Товарный знак Tele2
+            используется на основании лицензии от Теле2 АБ или ее дочерней компании.</p>
+        </div>
+        <div class="footer__column footer__column_content_telephone">
+          <div class="footer__column_city_phone">
+            <p class="footer__column-phone">8 (495) 97-97-611</p>
+            <p class="footer__column-phone">Для звонков с городских телефонов</p>
+          </div>
+          <div class="footer__column_tele2_phone">
+            <p class="footer__column-phone">611</p>
+            <p class="footer__column-phone">Для звонков с телефонов, подключенных к Tele2</p>
+          </div>
+
+        </div>
+        <div class="footer__column footer__column_content_social">
+          <p class="footer__column_social">Политикa Компаний Группы Tele2</p>
+          <p class="footer__column_social">Правилами пользования личным кабинетом</p>
+
+          <ul class="footer__column-links">
+            <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img
+              src="images/facebook.svg" alt="Facebook" class="footer__social-icon"></a></li>
+            <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img
+              src="images/youtube.svg" alt="youtube" class="footer__social-icon"></a></li>
+            <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img
+              src="images/vk.svg" alt="vk" class="footer__social-icon"></a></li>
+            <li class="footer__list-item"><a href="#" target="_blank" class="footer__link opacity"><img
+              src="images/ok2.svg" alt="ok" class="footer__social-icon"></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<template id="icon">
+  <img src="" alt="Иконка" class="unlimited__button"/>
+</template>
+
+<template id="element">
+  <li class="element">
+    <button aria-label="Удалить" type="button" class="element__delete"></button>
+    <img src="" alt="Картинка места" class="element__img"/>
+    <div class="element__description">
+      <h2 class="element__title"></h2>
+      <button aria-label="Лайк" type="button" class="element__like"></button>
+    </div>
+  </li>
+</template>
+<script type="module" src="main.js"></script>
 </body>
 
 </html>
