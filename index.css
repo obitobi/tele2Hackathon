@@ -628,3 +628,52 @@ input:disabled {
     display: flex;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .popup__container {
+    flex-direction: column;
+    margin: 20px auto 51px;
+  }
+
+  .popup__price {
+    display: none;
+  }
+
+  .popup__buy-button {
+    display: none;
+  }
+
+  .popup__your-plan {
+    align-items: initial;
+    min-width: 300px;
+  }
+
+  .popup__main-info {
+    align-items: initial;
+  }
+
+  .popup__your-plan-title {
+    margin: 50px 0 0 0;
+  }
+
+  .popup__your-plan-title-container {
+    align-items: initial;
+  }
+
+  .popup__container {
+    width: 90%;
+  }
+
+  .popup__additional_wrap {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .popup__additional-info {
+    margin: 0;
+  }
+
+  .footer__text2 {
+    display: none;
+  }
+}
