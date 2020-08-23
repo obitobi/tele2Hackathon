@@ -49,6 +49,11 @@
   align-items: center;
 }
 
+#burger-menu-icon {
+  margin-left: 10px;
+  padding-bottom: 6px;
+}
+
 .header__stuff {
   display: flex;
   align-items: center;
@@ -59,6 +64,10 @@
   justify-content: center;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .header__stuff-link {
   color: #8f9399;
   font-size: 13px;
@@ -67,6 +76,7 @@
   width: 65px;
   word-break: break-word;
   display: block;
+  align-self: center
 }
 
 .header__stuff-link:hover {
@@ -125,8 +135,7 @@
 }
 
 .popup__chat {
-  width: 430px;
-  height: 630px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
 }
@@ -138,9 +147,9 @@
 }
 
 .popup__chat-buttons {
+  margin: 15px auto;
   display: flex;
   justify-content: space-between;
-  margin-top: auto;
 }
 
 .dialog__ava-container {
@@ -163,7 +172,7 @@
   display: grid;
   grid-template-columns: 10% 80%;
   grid-template-rows: 1fr;
-  grid-gap: 3px;
+  grid-gap: 8px;
 
 }
 
@@ -207,6 +216,8 @@
 
 
 .popup__chat-buttons {
+  width: 300px;
+  height: 90px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -222,9 +233,10 @@
   background-color: transparent;
   color: #1F2229;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.2;
   text-align: center;
+  outline: none;
 }
 
 .popup__answer-button:hover {
@@ -233,16 +245,8 @@
 
 }
 
-.popup__answer-button:focus {
-  outline: none;
-  border: none;
-  background-color: #ff59a34d;
-}
-
-
 .popup__your-plan {
   width: 480px;
-  height: 450px;
   margin-left: 150px;
   align-self: center;
   display: flex;
@@ -453,7 +457,7 @@
 
 .footer__column_social {
   text-decoration: underline;
-  margin-bottom: 0px 0px 10px 0px;
+  margin: 0 0 10px 0;
 }
 
 .footer__column_social:last-of-type {
@@ -470,4 +474,26 @@
 
 .footer__column_city_phone {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 984px) {
+  .header__links {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+  }
+  .popup__your-plan {
+    margin-left: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popup__buy-button {
+    display: none;
+  }
+  .popup__price {
+    margin: 0 0 15px 0;
+    width: 200px;
+    height: 200px;
+  }
 }

@@ -39,11 +39,16 @@
           <img src="./images/cart-logo.svg" alt="" class="header__stuff-logo">
           <a href="#" class="header__stuff-link">Корзина пока пуста</a>
         </div>
+        <div class="header__stuff-container burger-menu" id="#burger-menu">
+          <img src="./images/burger-menu.svg" alt="" class="header__stuff-logo" id="burger-menu-icon">
+          <a href="#" class="header__stuff-link">Меню</a>
+        </div>
       </div>
     </div>
   </header>
 
   <main class="main">
+    <a href="./main.html" class="main-pageLink" style="display: none"></a>
     <div class="popup">
       <seсtion class="popup__container">
         <div class="popup__chat">
@@ -61,10 +66,6 @@
                   </p>
                   <img src="./images/tail-pink.svg" alt="" class="dialog__box_question-tail">
                 </div>
-              </div>
-              <div class="dialog__box dialog__box_answer" id="firstAnsw">
-                <p class="dialog__text">Да, давай попробуем!</p>
-                <img src="./images/tail-pink-opacity.svg" alt="" class="dialog__box_answer-tail">
               </div>
             </li>
           </ul>
@@ -87,7 +88,7 @@
             </div>
             <div class="popup__price">
               <p class="popup__price-value">
-                584
+                200
                 <img src="./images/currency.svg" alt="" class="popup__currency">
               </p>
             </div>
@@ -153,7 +154,7 @@
             <p class="footer__column-phone">611</p>
             <p class="footer__column-phone">Для звонков с телефонов, подключенных к Tele2</p>
           </div>
-          
+
         </div>
         <div class="footer__column footer__column_content_social">
           <p class="footer__column_social">Политикa Компаний Группы Tele2</p>
@@ -179,19 +180,19 @@
 
 <template id="dialog__element">
   <li class="dialog">
+    <div class="dialog__box dialog__box_answer" id="answ">
+      <p class="dialog__text"></p>
+      <img src="./images/tail-pink-opacity.svg" alt="" class="dialog__box_answer-tail">
+    </div>
     <div class="dialog__question">
       <div class="dialog__ava-container">
         <p class="dialog__name">Tele2</p>
         <img src="./images/tele2ded.jpg" alt="" class="dialog__avatar">
       </div>
-      <div class="dialog__box dialog__box_question">
-        <p class="dialog__text" id="question"></p>
+      <div class="dialog__box dialog__box_question" id="question">
+        <p class="dialog__text"></p>
         <img src="./images/tail-pink.svg" alt="" class="dialog__box_question-tail">
       </div>
-    </div>
-    <div class="dialog__box dialog__box_answer">
-      <p class="dialog__text" id="answ"></p>
-      <img src="./images/tail-pink-opacity.svg" alt="" class="dialog__box_answer-tail">
     </div>
   </li>
 </template>
