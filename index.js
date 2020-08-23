@@ -1,5 +1,4 @@
-const questions = [
-  {
+const questions = [{
     topic: 'Первое сообщение',
     content: 'Hei!'
   },

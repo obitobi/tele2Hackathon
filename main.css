@@ -87,15 +87,19 @@
 }
 
 .main {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
 
-.column__one {
-  margin: 60px 0 100px;
+.main__box {
+  width: 80%;
+  margin: 60px auto 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* .column__one {} */
 
 .main__tariff {
   display: flex;
@@ -148,47 +152,22 @@
   margin-bottom: 60px;
 }
 
-.popup__metric-container_main {
-  margin-bottom: 0;
-  margin-right: 65px;
-}
-
-/* НАЧАЛО БЛОК plan-info*/
-.plan-info__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.plan-info__icon {
-  width: 28px;
-  height: 28px;
-  margin-right: 12px;
-}
-
-.plan-info__text {
-  padding: 0;
-  margin: 0 0 20px 0;
+.popup__metric-column {
   display: flex;
-  align-items: center;
-  font-size: 16px;
-  line-height: 22px;
+  flex-direction: column;
+  margin-right: 60px;
 }
 
-.plan-info__link {
-  color: #8F9399;
-  line-height: 0.85;
-  text-decoration: none;
-  border-bottom: 1px solid #8F9399;
-  display: inline-block;
-  line-height: 0.85;
-  margin-top: 15px;
+.popup__metric-column:last-of-type {
+  margin-right: 0;
 }
 
-/* КОНЕЦ БЛОК plan-info*/
+.popup__metric-container_main {
+  margin: 0
+}
 
 
-/**/
+/*БЛОК безлимит*/
 .unlimited__title {
   padding: 0;
   margin: 0 0 15px 0;
@@ -314,3 +293,137 @@ input:checked+.unlimited__slider:before {
 }
 
 /*КОНЕЦ ЧЕКБОКСЫ*/
+/*Конец блок безлимит*/
+
+/**/
+.popup__price {
+
+  width: 226px;
+  height: 226px;
+}
+
+/**/
+
+/* НАЧАЛО БЛОК plan-info*/
+.plan-info__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-info__icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
+
+.plan-info__text {
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.plan-info__link {
+  color: #8F9399;
+  line-height: 0.85;
+  text-decoration: none;
+  border-bottom: 1px solid #8F9399;
+  display: inline-block;
+  line-height: 0.85;
+  margin-top: 15px;
+}
+
+/* КОНЕЦ БЛОК plan-info*/
+
+.triangle {
+  background-image: url(./images/triangle.svg);
+  background-repeat: no-repeat;
+  min-width: 100%;
+  padding-bottom: 16.9%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+}
+
+.footer {
+  min-height: 350px;
+  background-color: #1F2229;
+  padding-top: 50px;
+  padding-bottom: 104px;
+  box-sizing: border-box;
+}
+
+.footer__columns {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  color: white;
+  align-items: flex-end;
+}
+
+.footer__column_content_about {
+  width: 360px;
+  height: 120px;
+}
+
+.footer__column_content_telephone {
+  width: 260px;
+}
+
+.footer__column_content_social {
+  width: 260px;
+}
+
+.footer__tele2 {
+  color: white;
+}
+
+.main {
+  padding-bottom: 50px;
+}
+
+.footer__column {
+  font-size: 16px;
+}
+
+.footer_wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer__column-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list-item {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer__column_social {
+  text-decoration: underline;
+  margin-bottom: 0px 0px 10px 0px;
+}
+
+.footer__column_social:last-of-type {
+  margin-bottom: 37px;
+}
+
+.footer__text {
+  margin: 0;
+}
+
+.footer__column-phone {
+  margin: 0px 0px 5px 0px;
+}
+
+.footer__column_city_phone {
+  margin-bottom: 20px;
+}
+
