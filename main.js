@@ -75,6 +75,9 @@ const unlimitedList = unlimited.querySelector('.unlimited__list');
 const unlimitedItem = Array.from(unlimitedList.querySelectorAll('.unlimited__item'));
 const unlimitedButtons = unlimited.querySelector('.unlimited__buttons');
 const iconTemplate = document.querySelector("#icon").content;
+const numbInputs = Array.from(document.querySelectorAll(".popup__input"));
+const upArrow = Array.from(document.querySelectorAll(".popup__up-arrow"));
+const downArrow = Array.from(document.querySelectorAll(".popup__down-arrow"));
 
 
 
@@ -154,3 +157,65 @@ function showIcons(item) {
   }
 
 }
+
+// function keyHandlerNumb(evt) {
+//   // console.log(evt.key);
+//   if (evt.key.match(/[^0-9]/) && evt.key !== 'Backspace' && evt.key !== 'ArrowLeft' && evt.key !== 'ArrowRight' && evt.key !== 'Delete') {
+//     evt.preventDefault();
+//   }
+// }
+
+
+// numbInputs.forEach((item) => item.addEventListener("keydown", (evt) => {
+//   keyHandlerNumb(evt)
+// }));
+
+const minInput = document.querySelector('#minInput');
+const gbInput = document.querySelector('#gbInput');
+const upArrowMin = document.querySelector('.popup__up-arrow-min');
+const downArrowMin = document.querySelector('.popup__down-arrow-min');
+const upArrowGb = document.querySelector('.popup__up-arrow-gb');
+const downArrowGb = document.querySelector('.popup__down-arrow-gb');
+const gbInfBtn = document.querySelector('.popup__infinite-btn-gb');
+const minInfBtn = document.querySelector('.popup__infinite-btn-min');
+
+// console.log(gbInfBtn);
+
+minInfBtn.addEventListener('click', function () {
+  minInfBtn.classList.toggle('popup__social-colored');
+  if (minInfBtn.classList.contains('popup__social-colored')) {
+    minInput.value = '';
+    minInput.disabled = true;
+  }
+});
+
+gbInfBtn.addEventListener('click', function () {
+  gbInfBtn.classList.toggle('popup__social-colored');
+  if (gbInfBtn.classList.contains('popup__social-colored')) {
+    gbInput.value = '';
+    gbInput.disabled = true;
+  }
+});
+
+
+upArrowMin.addEventListener('click', function () {
+  minInput.value = Number(minInput.value) + 1;
+});
+
+downArrowMin.addEventListener('click', function () {
+  minInput.value = Number(minInput.value) - 1;
+});
+
+upArrowGb.addEventListener('click', function () {
+  gbInput.value = Number(gbInput.value) + 1;
+});
+
+downArrowGb.addEventListener('click', function () {
+  gbInput.value = Number(gbInput.value) - 1;
+});
+
+numbInputs.forEach((item) => item.addEventListener('keydown', function () {
+  if (this.value.length > 3) {
+    this.value = this.value.slice(0, 3);
+  }
+}))

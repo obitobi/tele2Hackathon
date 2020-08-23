@@ -55,27 +55,28 @@
               <p class="plan-info__text"><img src="./images/phone.svg" alt="иконка" class="plan-info__icon">Звонки</p>
               <div class="popup__metric-container popup__metric-container_main">
 
-                <label for="minInput">Мин:
-                  <input type="text" class="popup__input" id="minInput">
+                <label for="minInput" class="label-min">Мин:
+                  <input type="number" class="popup__input" id="minInput" value="100" min="0" max="1000">
+                  <img src="./images/infinity.svg" alt="иконка" class="plan-info__icon plan-info__icon-label">
                 </label>
                 <div class="popup__widgets">
-                  <img src="./images/up-arrow.svg" alt="" class="popup__up-arrow">
-                  <img src="./images/down-arrow.svg" alt="" class="popup__down-arrow">
+                  <img src="./images/up-arrow.svg" alt="" class="popup__arrow popup__up-arrow popup__up-arrow-min">
+                  <img src="./images/down-arrow.svg" alt="" class="popup__arrow popup__down-arrow popup__down-arrow-min">
                 </div>
-                <img src="./images/inf-grey.svg" alt="" class="popup__infinite-btn">
+                <img src="./images/inf-pink.svg" alt="" class="popup__infinite-btn popup__infinite-btn-min">
               </div>
             </div>
             <div class="popup__metric-column">
               <p class="plan-info__text"><img src="./images/connect.svg" alt="иконка" class="plan-info__icon">Интернет</p>
               <div class="popup__metric-container popup__metric-container_main">
-                <label for="gbInput">ГБ:
-                  <input type="text" class="popup__input" id="gbInput">
+                <label for="gbInput" class="label-gb">ГБ:
+                  <input type="number" class="popup__input" id="gbInput" value="10" min="0" max="1000">
                 </label>
                 <div class="popup__widgets">
-                  <img src="./images/up-arrow.svg" alt="" class="popup__up-arrow">
-                  <img src="./images/down-arrow.svg" alt="" class="popup__down-arrow">
+                  <img src="./images/up-arrow.svg" alt="" class="popup__arrow popup__up-arrow popup__up-arrow-gb">
+                  <img src="./images/down-arrow.svg" alt="" class="popup__arrow popup__down-arrow popup__down-arrow-gb">
                 </div>
-                <img src="./images/inf-pink.svg" alt="" class="popup__infinite-btn">
+                <img src="./images/inf-pink.svg" alt="" class="popup__infinite-btn popup__infinite-btn-gb">
               </div>
             </div>
 
@@ -115,8 +116,10 @@
 
         <div class="popup__main-info">
           <div class="popup__price">
-            <p class="popup__price-value">584</p>
-            <img src="./images/currency.svg" alt="" class="popup__currency">
+            <p class="popup__price-value">584
+              <img src="./images/currency.svg" alt="" class="popup__currency">
+            </p>
+
           </div>
           <button aria-label="Купить" type="button" class="popup__buy-button">Купить</button>
         </div>
