@@ -350,6 +350,29 @@
   margin-left: 40px;
 }
 
+.label-min {
+  position: relative;
+}
+
+.label-gb {
+  position: relative;
+}
+
+.plan-info__icon-label-min {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  visibility: hidden;
+}
+
+.plan-info__icon-label-gb {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  visibility: hidden;
+}
+
+
 .popup__input {
   border: 0;
   border-bottom: 1px solid #1F2229;
@@ -357,6 +380,17 @@
   width: 100%;
   margin: 5px 0 5px 0;
   outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:disabled {
+  color: transparent;
+  background-color: transparent;
 }
 
 .popup__metric-container {
@@ -372,6 +406,10 @@
   display: flex;
   flex-direction: column;
   margin: 0 20px 0 10px;
+}
+
+.popup__arrow {
+  cursor: pointer;
 }
 
 .popup__up-arrow {

@@ -223,6 +223,12 @@
   opacity: 1;
 }
 
+.unlimited__button_hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
 /**/
 
 
@@ -427,4 +433,3 @@ input:checked+.unlimited__slider:before {
 .footer__column_city_phone {
   margin-bottom: 20px;
 }
-
