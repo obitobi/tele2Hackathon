@@ -349,10 +349,18 @@
   position: relative;
 }
 
-.plan-info__icon-label {
+.plan-info__icon-label-min {
   position: absolute;
   top: 17px;
   left: 0;
+  visibility: hidden;
+}
+
+.plan-info__icon-label-gb {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  visibility: hidden;
 }
 
 

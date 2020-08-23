@@ -178,14 +178,20 @@ const upArrowGb = document.querySelector('.popup__up-arrow-gb');
 const downArrowGb = document.querySelector('.popup__down-arrow-gb');
 const gbInfBtn = document.querySelector('.popup__infinite-btn-gb');
 const minInfBtn = document.querySelector('.popup__infinite-btn-min');
+const minInfIcon = document.querySelector('.plan-info__icon-label-min');
+const gbInfIcon = document.querySelector('.plan-info__icon-label-gb');
 
-// console.log(gbInfBtn);
 
 minInfBtn.addEventListener('click', function () {
   minInfBtn.classList.toggle('popup__social-colored');
   if (minInfBtn.classList.contains('popup__social-colored')) {
     minInput.value = '';
     minInput.disabled = true;
+    minInfIcon.style.visibility = 'visible';
+  } else {
+    minInfIcon.style.visibility = 'hidden';
+    minInput.disabled = false;
+    minInput.value = '100';
   }
 });
 
@@ -194,6 +200,11 @@ gbInfBtn.addEventListener('click', function () {
   if (gbInfBtn.classList.contains('popup__social-colored')) {
     gbInput.value = '';
     gbInput.disabled = true;
+    gbInfIcon.style.visibility = 'visible';
+  } else {
+    gbInput.value = '10';
+    gbInput.disabled = false;
+    gbInfIcon.style.visibility = 'hidden';
   }
 });
 
