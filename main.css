@@ -97,6 +97,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /* .column__one {} */
@@ -433,3 +434,29 @@ input:checked+.unlimited__slider:before {
 .footer__column_city_phone {
   margin-bottom: 20px;
 }
+
+
+@media screen and (max-width:1280px) {
+  .main__box {
+    width: 95%;
+  }
+
+  .popup__price {
+    width: 200px;
+    height: 200px;
+  }
+
+  .popup__buy-button {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .main__box {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:424px) {}

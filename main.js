@@ -3,69 +3,50 @@ const iconsSocial = [{
     isCheked: false,
   },
   {
-    link: "./images/ok.svg",
+    link: "./images/facebook-color.svg",
     isCheked: false,
   },
   {
-    link: "./images/ok.svg",
+    link: "./images/instagram.svg",
     isCheked: false,
   },
   {
-    link: "./images/ok.svg",
+    link: "./images/vk-color.svg",
     isCheked: false,
   }
 ];
 
 const iconsMessenger = [{
-    link: "./images/ok.svg",
+    link: "./images/viber.svg",
   },
   {
-    link: "./images/ok.svg",
+    link: "./images/whatsapp.svg",
   },
   {
-    link: "./images/ok.svg",
+    link: "./images/tamtam.svg",
   },
   {
-    link: "./images/ok.svg",
-  },
-  {
-    link: "./images/ok.svg",
+    link: "./images/twitch.svg",
   }
 ];
 
 const iconsMusic = [{
-    link: "./images/ok.svg",
-  },
-  {
-    link: "./images/ok.svg",
-  },
-  {
-    link: "./images/ok.svg",
-  }
-];
+  link: "./images/zvooq.svg",
+}];
 
 const iconsVideo = [{
-    link: "./images/ok.svg",
+    link: "./images/youtube-colored.svg",
   },
   {
-    link: "./images/ok.svg",
+    link: "./images/teletv.svg",
   }
 ];
 
 const iconsOther = [{
-    link: "./images/ok.svg",
+    link: "./images/nav.svg",
   },
   {
-    link: "./images/ok.svg",
-  },
-  {
-    link: "./images/ok.svg",
-  },
-  {
-    link: "./images/ok.svg",
-  },
-  {
-    link: "./images/ok.svg",
+    link: "./images/maps.svg",
   }
 ];
 
@@ -158,17 +139,7 @@ function showIcons(item) {
 
 }
 
-// function keyHandlerNumb(evt) {
-//   // console.log(evt.key);
-//   if (evt.key.match(/[^0-9]/) && evt.key !== 'Backspace' && evt.key !== 'ArrowLeft' && evt.key !== 'ArrowRight' && evt.key !== 'Delete') {
-//     evt.preventDefault();
-//   }
-// }
-
-
-// numbInputs.forEach((item) => item.addEventListener("keydown", (evt) => {
-//   keyHandlerNumb(evt)
-// }));
+// ОТСЮДА КОПИРУЙ
 
 const minInput = document.querySelector('#minInput');
 const gbInput = document.querySelector('#gbInput');
