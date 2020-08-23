@@ -158,17 +158,7 @@ function showIcons(item) {
 
 }
 
-// function keyHandlerNumb(evt) {
-//   // console.log(evt.key);
-//   if (evt.key.match(/[^0-9]/) && evt.key !== 'Backspace' && evt.key !== 'ArrowLeft' && evt.key !== 'ArrowRight' && evt.key !== 'Delete') {
-//     evt.preventDefault();
-//   }
-// }
-
-
-// numbInputs.forEach((item) => item.addEventListener("keydown", (evt) => {
-//   keyHandlerNumb(evt)
-// }));
+// ОТСЮДА КОПИРУЙ
 
 const minInput = document.querySelector('#minInput');
 const gbInput = document.querySelector('#gbInput');
