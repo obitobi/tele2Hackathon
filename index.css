@@ -461,6 +461,11 @@ input:disabled {
   padding-top: 50px;
   padding-bottom: 104px;
   box-sizing: border-box;
+  font-family: "Tele2 TextSans Web SHORT";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .footer__columns {
