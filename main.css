@@ -455,6 +455,10 @@ input:checked+.unlimited__slider:before {
   .main__box {
     width: 80%;
   }
+
+  .unlimited {
+    margin-top: 48px;
+  }
 }
 
 @media screen and (max-width:767px) {}
