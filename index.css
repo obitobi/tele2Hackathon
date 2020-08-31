@@ -125,17 +125,22 @@
 .popup__title {
   text-transform: uppercase;
   margin: 0 0 40px;
+  font-family: "Tele2 DisplaySerif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
 }
 
 .popup__container {
   display: flex;
   width: 80%;
-  justify-content: center;
+  justify-content: space-between;
   margin: 60px auto 120px;
 }
 
 .popup__chat {
-  min-width: 300px;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -247,6 +252,7 @@
 
 .popup__your-plan {
   width: 480px;
+  margin-top: 90px;
   margin-left: 150px;
   align-self: center;
   display: flex;
@@ -305,6 +311,11 @@
 .popup__your-plan-title {
   font-size: 28px;
   margin: 0 0 17px 0;
+  font-family: "Tele2 DisplaySerif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 38px;
 }
 
 .popup__your-plan-subtitle {
@@ -313,10 +324,12 @@
 }
 
 .popup__price-value {
-  font-size: 54px;
+  margin: 0;
+  font-family: "Tele2 DisplaySerif";
   font-style: normal;
   font-weight: normal;
-  margin: 0;
+  font-size: 72px;
+  line-height: 72px;
 }
 
 .popup__price-wrap {
@@ -348,6 +361,7 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 40px;
+  margin-top: 154px;
 }
 
 .label-min {
@@ -417,10 +431,10 @@ input:disabled {
 }
 
 .popup__socials {
-  max-width: 150px;
+  max-width: 260px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 32px);
-  grid-gap: 6px;
+  grid-template-columns: repeat(auto-fill, 34px);
+  grid-gap: 10px;
 }
 
 .popup__social {
@@ -527,7 +541,7 @@ input:disabled {
   justify-content: space-between;
   color: white;
   align-items: center;
-  display:none;
+  display: none;
 }
 
 .footer__price {
@@ -597,24 +611,29 @@ input:disabled {
   .header__links {
     display: none;
   }
+
   .burger-menu {
     display: flex;
   }
+
   .popup__your-plan {
     margin-left: 50px;
     flex-direction: column;
     align-items: center;
   }
+
   .popup__buy-button {
     width: 200px;
     height: 50px;
     margin-bottom: 15px;
   }
+
   .popup__price {
     margin: 0 0 15px 0;
     width: 200px;
     height: 200px;
   }
+
   .footer {
     min-height: 100px;
     padding: 0;

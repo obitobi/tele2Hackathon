@@ -183,10 +183,9 @@
   padding: 0;
   margin: 0;
   display: flex;
-  width: 400px;
+  width: 407px;
   height: 32px;
   justify-content: space-around;
-  border-bottom: 1px solid #1f222966;
   color: #1f222966;
 }
 
@@ -194,7 +193,8 @@
 .unlimited__item {
   text-align: center;
   cursor: pointer;
-  padding: 0 8px;
+  padding: 0 9px;
+  border-bottom: 1px solid #1f222966;
 }
 
 .unlimited__item_active {
@@ -469,7 +469,7 @@ input:checked+.unlimited__slider:before {
   justify-content: space-between;
   color: white;
   align-items: center;
-  display:none;
+  display: none;
 }
 
 .footer__price {
@@ -539,24 +539,29 @@ input:checked+.unlimited__slider:before {
   .header__links {
     display: none;
   }
+
   .burger-menu {
     display: flex;
   }
+
   .popup__your-plan {
     margin-left: 50px;
     flex-direction: column;
     align-items: center;
   }
+
   .popup__buy-button {
     width: 200px;
     height: 50px;
     margin-bottom: 15px;
   }
+
   .popup__price {
     margin: 0 0 15px 0;
     width: 200px;
     height: 200px;
   }
+
   .footer {
     min-height: 100px;
     padding: 0;
